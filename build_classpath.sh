@@ -9,6 +9,9 @@ mkdir -p output/classes
 javac -d output/classes data/org/tw/javamods/data/SomeData.java
 # Create a jar using classes
 jar -c -f output/mlib/data.jar -C output/classes .
+
+#Use below command to generate a jar file that is old and with a automatic module name
+#jar -c -m data/MANIFEST.MF -f output/mlib/data.jar -C output/classes .
 #At the end of this we have a jar file
 
 #Remove and recreate classes folder
