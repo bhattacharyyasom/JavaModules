@@ -1,0 +1,3 @@
+module twservice {
+    requires twdata;
+}
