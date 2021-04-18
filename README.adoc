@@ -1,24 +1,81 @@
-### Java Modules in the raw
+= Java Modules in the raw
+Som Bhattacharyya <bhattacharyyasom@gmail.com>
+
 This code base has a basic skeleton of an application inspired from this excellent talk by Venkat Subramanium .
 
-Ref : https://www.youtube.com/watch?v=DItYExUOPeM
+Ref : https://www.youtube.com/watch?v=DItYExUOPeM[Link to talk]
 
-This example does not use any build tool or IDE specific tools to make sure we try and understand java modules at its lowest level possible.
+The example does not use any build tool or IDE specific tools to make sure we try and understand java modules at its lowest level possible.
 
 The code inside the `service` folder depends on code inside `data` folder.
-We create a `jar` for each in the old way, and the new "modularised" way and see the differences.
+We create a `jar` for each in the old way, and the new `modularised` way and see the differences.
 
-Below instructions can be followed to follow along and learn the bare bones of java modules
+=== Compiling and running "old jars" on classpath
 
-###### Compiling and running "old jars" on classpath
 * The `build_classpath.sh` has the sequence of the commands to compile and run in the old way
 
-###### Compile "old jars" and run on module path 
+//
+//This is a paragraph.
+//
+//.Example block title
+//====
+//Content in an example block is subject to normal substitutions.
+//====
+//
+//.Sidebar title
+//****
+//Sidebars contain aside text and are subject to normal substitutions.
+//****
+
+=== Compile "old jars" and run on module path
 * At the end of the `build_classpath.sh` file there is a commented out command that can be used to see what would happen if we ran these old style jars on the module path
-* Also, because old jars on module path are treated as `Automatic` modules 
 
+TIP: Also, because old jars on module path are treated as `Automatic` modules
 
-###### Compile and run "modularized jars" on module path
+=== Compile and run "modularized jars" on module path
 * The `build_mods.sh` has the sequence of the commands to compile and run the same code in the "new" way
 
-[Link to talk]: https://www.youtube.com/watch?v=DItYExUOPeM
+
+//===== Fourth level heading
+//
+//.Table title
+//|===
+//|Column heading 1 |Column heading 2
+//
+//|Column 1, row 1
+//|Column 2, row 1
+//
+//|Column 1, row 2
+//|Column 2, row 2
+//|===
+
+//====== Fifth level heading
+//
+//[quote,firstname lastname,movie title]
+//____
+//I am a block quote or a prose excerpt.
+//I am subject to normal substitutions.
+//____
+//
+//[verse,firstname lastname,poem title and more]
+//____
+//I am a verse block.
+//  Indents and endlines are preserved in verse blocks.
+//____
+//
+//== First level heading
+//
+
+//
+// I am a comment and won't be rendered.
+//
+//. ordered list item
+//.. nested ordered list item
+//. ordered list item
+//
+//The text at the end of this sentence is cross referenced to <<_third_level_heading,the third level heading>>
+//
+//== First level heading
+//
+//This is a link to the https://docs.asciidoctor.org/home/[Asciidoctor documentation].
+//This is an attribute reference {url-quickref}[that links this text to the AsciiDoc Syntax Quick Reference].
