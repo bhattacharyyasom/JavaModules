@@ -1,0 +1,24 @@
+### Java Modules in the raw
+This code base has a basic skeleton of an application inspired from this excellent talk by Venkat Subramanium .
+
+Ref : https://www.youtube.com/watch?v=DItYExUOPeM
+
+This example does not use any build tool or IDE specific tools to make sure we try and understand java modules at its lowest level possible.
+
+The code inside the `service` folder depends on code inside `data` folder.
+We create a `jar` for each in the old way, and the new "modularised" way and see the differences.
+
+Below instructions can be followed to follow along and learn the bare bones of java modules
+
+###### Compiling and running "old jars" on classpath
+* The `build_classpath.sh` has the sequence of the commands to compile and run in the old way
+
+###### Compile "old jars" and run on module path 
+* At the end of the `build_classpath.sh` file there is a commented out command that can be used to see what would happen if we ran these old style jars on the module path
+* Also, because old jars on module path are treated as `Automatic` modules 
+
+
+###### Compile and run "modularized jars" on module path
+* The `build_mods.sh` has the sequence of the commands to compile and run the same code in the "new" way
+
+[Link to talk]: https://www.youtube.com/watch?v=DItYExUOPeM
